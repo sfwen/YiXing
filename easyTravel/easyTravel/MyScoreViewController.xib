@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyScoreViewController">
+            <connections>
+                <outlet property="line" destination="nMI-a9-vZm" id="GYS-pS-QQz"/>
+                <outlet property="myScoreLabel" destination="gd4-TA-ET9" id="Hik-g3-EsZ"/>
+                <outlet property="myscoreLabel2" destination="t5u-zi-L5c" id="atr-gi-R2S"/>
+                <outlet property="score" destination="59u-D4-Jc2" id="zQ6-64-05k"/>
+                <outlet property="tableView" destination="l9K-gy-yQT" id="Bov-sC-p8t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPg-lP-bic" userLabel="topArea">
+                    <rect key="frame" x="0.0" y="64" width="600" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="scoreIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-c3-j1x">
+                            <rect key="frame" x="30" y="25" width="30" height="30"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="我的积分:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd4-TA-ET9">
+                            <rect key="frame" x="75" y="29" width="73" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59u-D4-Jc2" userLabel="score">
+                            <rect key="frame" x="168" y="40" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(分)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5u-zi-L5c">
+                            <rect key="frame" x="183" y="29" width="26" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMI-a9-vZm" userLabel="line">
+                            <rect key="frame" x="0.0" y="79" width="600" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="9lU-7a-7aj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tg9-c3-j1x" firstAttribute="centerY" secondItem="59u-D4-Jc2" secondAttribute="centerY" constant="0.5" id="L24-uW-9wP"/>
+                        <constraint firstItem="nMI-a9-vZm" firstAttribute="bottom" secondItem="qPg-lP-bic" secondAttribute="bottom" id="O2a-ZK-hLS"/>
+                        <constraint firstAttribute="width" secondItem="nMI-a9-vZm" secondAttribute="width" id="Oin-uU-Akf"/>
+                        <constraint firstAttribute="height" constant="80" id="Ql6-i5-02Y"/>
+                        <constraint firstItem="gd4-TA-ET9" firstAttribute="leading" secondItem="tg9-c3-j1x" secondAttribute="trailing" constant="15" id="XbA-we-4er"/>
+                        <constraint firstItem="tg9-c3-j1x" firstAttribute="leading" secondItem="qPg-lP-bic" secondAttribute="leading" constant="30" id="cf3-H3-nA5"/>
+                        <constraint firstItem="t5u-zi-L5c" firstAttribute="leading" secondItem="59u-D4-Jc2" secondAttribute="trailing" constant="15" id="hRY-5X-eWR"/>
+                        <constraint firstItem="t5u-zi-L5c" firstAttribute="centerY" secondItem="tg9-c3-j1x" secondAttribute="centerY" constant="-0.5" id="hXj-S6-lI7"/>
+                        <constraint firstItem="tg9-c3-j1x" firstAttribute="centerY" secondItem="qPg-lP-bic" secondAttribute="centerY" id="hlE-zb-cSs"/>
+                        <constraint firstItem="59u-D4-Jc2" firstAttribute="leading" secondItem="gd4-TA-ET9" secondAttribute="trailing" constant="20" id="iPW-Ia-JQu"/>
+                        <constraint firstItem="gd4-TA-ET9" firstAttribute="centerY" secondItem="tg9-c3-j1x" secondAttribute="centerY" constant="-0.5" id="jsV-e4-327"/>
+                        <constraint firstAttribute="centerX" secondItem="nMI-a9-vZm" secondAttribute="centerX" id="mWF-sz-J3j"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收支明细" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvs-mT-zco">
+                    <rect key="frame" x="20" y="159" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="l9K-gy-yQT">
+                    <rect key="frame" x="0.0" y="195" width="600" height="405"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lFx-OX-P1n"/>
+                        <outlet property="delegate" destination="-1" id="hZl-gf-pK6"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gvs-mT-zco" firstAttribute="top" secondItem="qPg-lP-bic" secondAttribute="bottom" constant="15" id="17k-wv-VJo"/>
+                <constraint firstItem="l9K-gy-yQT" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="1mk-7e-NLo"/>
+                <constraint firstAttribute="trailing" secondItem="qPg-lP-bic" secondAttribute="trailing" id="AyH-0a-BNA"/>
+                <constraint firstItem="l9K-gy-yQT" firstAttribute="top" secondItem="Gvs-mT-zco" secondAttribute="bottom" constant="15" id="B8j-bm-Rs2"/>
+                <constraint firstItem="l9K-gy-yQT" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="MZ5-wx-b8Y"/>
+                <constraint firstItem="qPg-lP-bic" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U9A-f2-Hum"/>
+                <constraint firstItem="Gvs-mT-zco" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Zaz-MX-Hkf"/>
+                <constraint firstItem="qPg-lP-bic" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="aNw-Ck-Y3K"/>
+                <constraint firstItem="l9K-gy-yQT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="liu-xd-o5O"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="scoreIcon-1" width="30" height="30"/>
+    </resources>
+</document>

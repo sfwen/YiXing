@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<string>新订单, 等待支付</string>
+	<key>2</key>
+	<string>已支付, 等待出票</string>
+	<key>3</key>
+	<string>已出票, 等待差额退款</string>
+	<key>4</key>
+	<string>出票成功, 交易结束</string>
+	<key>5</key>
+	<string>出票失败, 等待退款</string>
+	<key>6</key>
+	<string>已支付, 等待退款</string>
+	<key>7</key>
+	<string>申请退票, 等待处理</string>
+	<key>8</key>
+	<string>退票失败, 交易结束</string>
+	<key>9</key>
+	<string>已退票, 等待退款</string>
+	<key>10</key>
+	<string>退款失败, 交易结束</string>
+	<key>11</key>
+	<string>退款成功，交易结束</string>
+	<key>12</key>
+	<string>订单已取消</string>
+	<key>13</key>
+	<string>出票成功，差额退款失败</string>
+	<key>14</key>
+	<string>出票成功，差额退款成功</string>
+	<key>1001</key>
+	<string>退票成功，等待退款</string>
+	<key>1002</key>
+	<string>退款中，正在处理</string>
+	<key>1003</key>
+	<string>退款失败，交易结束</string>
+	<key>1004</key>
+	<string>退款成功，交易结束</string>
+	<key>1005</key>
+	<string>申请退票，等待处理</string>
+	<key>1006</key>
+	<string>退票失败，交易结束</string>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageCenterViewController">
+            <connections>
+                <outlet property="line" destination="KaB-Oh-rbg" id="Z1O-eL-FUJ"/>
+                <outlet property="tableView" destination="TqQ-SX-0Lm" id="jTx-A2-FOG"/>
+                <outlet property="topArea" destination="Mdd-ef-1zg" id="1r5-Ld-kcQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdd-ef-1zg" userLabel="topArea">
+                    <rect key="frame" x="0.0" y="64" width="600" height="20"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaB-Oh-rbg" userLabel="line">
+                            <rect key="frame" x="0.0" y="19" width="600" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="plO-le-MGS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="8Lt-TT-RYb"/>
+                        <constraint firstItem="KaB-Oh-rbg" firstAttribute="trailing" secondItem="Mdd-ef-1zg" secondAttribute="trailing" id="8TG-7k-8td"/>
+                        <constraint firstAttribute="bottom" secondItem="KaB-Oh-rbg" secondAttribute="bottom" id="9Qm-t6-cvc"/>
+                        <constraint firstItem="KaB-Oh-rbg" firstAttribute="leading" secondItem="Mdd-ef-1zg" secondAttribute="leading" id="szR-5m-c0h"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TqQ-SX-0Lm">
+                    <rect key="frame" x="0.0" y="84" width="600" height="516"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Qfk-Gm-y5U"/>
+                        <outlet property="delegate" destination="-1" id="Rma-xV-Qje"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mdd-ef-1zg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="79l-SI-2Vc"/>
+                <constraint firstItem="TqQ-SX-0Lm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B4K-z0-Wyx"/>
+                <constraint firstItem="TqQ-SX-0Lm" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="HcR-Dn-rwq"/>
+                <constraint firstItem="TqQ-SX-0Lm" firstAttribute="top" secondItem="Mdd-ef-1zg" secondAttribute="bottom" id="ZfA-TS-v8N"/>
+                <constraint firstItem="TqQ-SX-0Lm" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="g7r-JA-UhH"/>
+                <constraint firstItem="Mdd-ef-1zg" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="w3j-Ms-sJX"/>
+                <constraint firstItem="Mdd-ef-1zg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="xKv-3t-xVk"/>
+            </constraints>
+            <point key="canvasLocation" x="224" y="255"/>
+        </view>
+    </objects>
+</document>

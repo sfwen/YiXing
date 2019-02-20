@@ -1,0 +1,6 @@
+framework module Na517OpenSDK {
+  umbrella header "Na517OpenSDK.h"
+
+  export *
+  module * { export * }
+}

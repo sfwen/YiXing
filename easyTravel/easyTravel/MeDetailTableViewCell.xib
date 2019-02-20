@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MeDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUu-Uf-8LZ">
+                        <rect key="frame" x="13" y="11" width="100" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="H0a-sb-92N"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1231231231231" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KRu-Dl-35w" userLabel="Round Style Text Field">
+                        <rect key="frame" x="118" y="11" width="194" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0w-Or-Zb3" userLabel="男Checkbox">
+                        <rect key="frame" x="118" y="11" width="20" height="22"/>
+                        <state key="normal" image="checked">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="checkBox1:" destination="KGk-i7-Jjw" eventType="touchDown" id="Cqs-dy-EjQ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq5-Kp-rg5" userLabel="女CheckBox">
+                        <rect key="frame" x="195" y="11" width="19" height="22"/>
+                        <state key="normal" image="unChecked">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="checkBox2:" destination="KGk-i7-Jjw" eventType="touchDown" id="qtY-uy-dky"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSp-sn-hnU">
+                        <rect key="frame" x="148" y="11" width="17" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boa-nJ-9Xs">
+                        <rect key="frame" x="224" y="12" width="17" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TUu-Uf-8LZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1th-mt-TmY"/>
+                    <constraint firstItem="eq5-Kp-rg5" firstAttribute="centerY" secondItem="sSp-sn-hnU" secondAttribute="centerY" id="8fB-6j-Vcu"/>
+                    <constraint firstItem="e0w-Or-Zb3" firstAttribute="centerY" secondItem="TUu-Uf-8LZ" secondAttribute="centerY" id="8q0-hZ-VQk"/>
+                    <constraint firstItem="eq5-Kp-rg5" firstAttribute="leading" secondItem="sSp-sn-hnU" secondAttribute="trailing" constant="30" id="96F-d9-H7L"/>
+                    <constraint firstItem="KRu-Dl-35w" firstAttribute="bottom" secondItem="TUu-Uf-8LZ" secondAttribute="bottom" id="EnM-R9-kei"/>
+                    <constraint firstItem="sSp-sn-hnU" firstAttribute="centerY" secondItem="e0w-Or-Zb3" secondAttribute="centerY" id="LUv-md-EJg"/>
+                    <constraint firstItem="TUu-Uf-8LZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="SZ5-OJ-hCp"/>
+                    <constraint firstItem="boa-nJ-9Xs" firstAttribute="centerY" secondItem="eq5-Kp-rg5" secondAttribute="centerY" id="T9i-Id-1GS"/>
+                    <constraint firstItem="KRu-Dl-35w" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="YdW-Pp-WyC"/>
+                    <constraint firstItem="KRu-Dl-35w" firstAttribute="leading" secondItem="TUu-Uf-8LZ" secondAttribute="trailing" constant="5" id="kZR-Ag-zj9"/>
+                    <constraint firstItem="e0w-Or-Zb3" firstAttribute="leading" secondItem="TUu-Uf-8LZ" secondAttribute="trailing" constant="5" id="kdx-wj-UXj"/>
+                    <constraint firstItem="boa-nJ-9Xs" firstAttribute="leading" secondItem="eq5-Kp-rg5" secondAttribute="trailing" constant="10" id="uHy-J4-mkt"/>
+                    <constraint firstItem="sSp-sn-hnU" firstAttribute="leading" secondItem="e0w-Or-Zb3" secondAttribute="trailing" constant="10" id="zKd-dd-afe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="KRu-Dl-35w" id="IUL-Bz-Po6"/>
+                <outlet property="manCheckBox" destination="e0w-Or-Zb3" id="gSg-X9-hTl"/>
+                <outlet property="manLabel" destination="sSp-sn-hnU" id="OHn-mq-oQO"/>
+                <outlet property="title" destination="TUu-Uf-8LZ" id="x2w-6D-4nU"/>
+                <outlet property="womanCheckBox" destination="eq5-Kp-rg5" id="ezF-dh-TIl"/>
+                <outlet property="womanLabel" destination="boa-nJ-9Xs" id="yhA-Ld-NJU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checked" width="20" height="20"/>
+        <image name="unChecked" width="19" height="19"/>
+    </resources>
+</document>
